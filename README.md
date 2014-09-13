@@ -7,8 +7,8 @@ This will install all packages for windows and linux.  The linux install does
 not check for dependent linux developemnt packages.  I could use some help 
 setting up an accompaning shell script for rpm and deb installations.
 
-Included is
-  install R packages function script
+Included is\n
+  install R packages function script\n
   
   linux rpm developement package install shell script
   
