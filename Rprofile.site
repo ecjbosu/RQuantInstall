@@ -6,7 +6,9 @@
 #' Aim    : R profile.site file
 #' Mail   : <<<ecjbosu@aol.com>>>
 #'==============================================================================
-#' 
+#' Notes:  A symbolic link placed in /pathtoRdirectory/etc to this file located 
+#'  a custom deployment enviroment is beneficial to facilitate pushed updates.
+
 # Things you might want to change
 
 # options(papersize="a4")
