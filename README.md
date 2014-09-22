@@ -15,7 +15,7 @@ setting up an accompaning shell script for rpm and deb installations.
   data locations.</li>
 </ul>
 
-<ul>Programs to help the Quant (Windows and Linux Applications)
+<ul>Programs to help the Quant (Windows and Linux Applications:  most are avialable in linux repositories, so download link included to help Windows users)
 <li>R (http://cran.at.r-project.org/bin/windows/base/) using Github/ecjbosu installation instructions.</li>
 <li>Rstudio (http://www.rstudio.com/products/rstudio/download/)</li>
 <li>Tinn-R (http://sourceforge.net/projects/tinn-r/)</li>
