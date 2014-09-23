@@ -34,7 +34,7 @@ setting up an accompaning shell script for rpm and deb installations.
 <li>DIA (http://dia-installer.de/)</li>
 </ul>
 <ul>Would like not necessary
-<li>Lpsolve (http://sourceforge.net/projects/lpsolve/) This is an R package, but the external libraries can be called from python, vba (script), and many others.</li>
+<li>Lpsolve (http://sourceforge.net/projects/lpsolve/) This has an R package, but the external libraries can be called from python, vba (script), and many others.</li>
 <li>GantProject (http://www.ganttproject.biz/download.php)</li>
 <li>GnuWin32 (http://sourceforge.net/projects/gnuwin32/)</li>
 <li>GnuWin64 (when available)</li>
