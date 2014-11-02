@@ -48,5 +48,6 @@ eval(parse(text = src), envir= .GlobalEnv)
 <li>GnuWin64 (when available)</li>
 </ul>
 
-References:<nl>
+References:
+
 http://www.r-bloggers.com/source_https-sourcing-an-r-script-from-github-over-https/
