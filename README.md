@@ -19,7 +19,7 @@ Source script from R: Requires RCurl to be installed.
 ```
 require(RCurl)
 src <- ("https://github.com/ecjbosu/RQuantInstall/blob/master/requiredpackagesinstall.R")
-src <- getURL(src,, ssl.verifypeer = F)
+src <- getURL(src, ssl.verifypeer = F)
 eval(parse(text = src), envir= .GlobalEnv)
 ```
 
