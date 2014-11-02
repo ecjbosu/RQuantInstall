@@ -16,12 +16,12 @@ setting up an accompaning shell script for rpm and deb installations.
 </ul>
 
 Source script from R: Requires RCurl to be installed.  
-...
+'''
 require(RCurl)
 src <- ("https://github.com/ecjbosu/RQuantInstall/blob/master/requiredpackagesinstall.R")
 src <- getURL(src,, ssl.verifypeer = F)
 eval(parse(text = src), envir= .GlobalEnv)
-...
+'''
 
 <ul>Programs to help the Quant (Windows and Linux Applications:  most are avialable in linux repositories, so download link included to help Windows users)
 <li>R (http://cran.at.r-project.org/bin/windows/base/) using Github/ecjbosu installation instructions.</li>
@@ -48,5 +48,5 @@ eval(parse(text = src), envir= .GlobalEnv)
 <li>GnuWin64 (when available)</li>
 </ul>
 
-References:
+References:<nl>
 http://www.r-bloggers.com/source_https-sourcing-an-r-script-from-github-over-https/
