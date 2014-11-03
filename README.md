@@ -18,6 +18,7 @@ setting up an accompaning shell script for rpm and deb installations.
 Source script from R: Requires RCurl to be installed.  
 
 Download the R program from http://cran.r-project.org/bin/windows/base/
+
 <ul>Execute the R-Ver-win.exe.
 <li>Agree to the GNU GPL</li>
 <li>Change the Install location to - C:\R (this makes our lives easier)</li>
@@ -27,6 +28,13 @@ Download the R program from http://cran.r-project.org/bin/windows/base/
 <li>Select Standard Internet</li>
 <li>Click Next until Done</li>
 </ul>
+
+<ul>edit R/etc/repositories to read as
+<li>Omegahat Omegahat http://www.omegahat.org/RTRUE TRUE TRUE FALSE</li>
+<li>R-Forge R-Forge http://R-Forge.R-project.orgTRUE TRUE TRUE TRUE</li>
+<li>forge.net rforge.net http://www.rforge.netTRUE TRUE TRUE TRUE</li>
+</ul>
+
 Install R Studio
 ```
 require(RCurl)
