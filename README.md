@@ -35,7 +35,7 @@ Download the R program from http://cran.r-project.org/bin/windows/base/
 
 Install R Studio
 
-Source script from R: Requires RCurl to be installed.  
+Source script from R packages for the Ultimate Quant R: Requires RCurl to be installed.  
 ```
 require(RCurl)
 src <- ("https://github.com/ecjbosu/RQuantInstall/blob/master/requiredpackagesinstall.R")
