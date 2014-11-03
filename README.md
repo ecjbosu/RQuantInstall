@@ -16,6 +16,18 @@ setting up an accompaning shell script for rpm and deb installations.
 </ul>
 
 Source script from R: Requires RCurl to be installed.  
+
+Download the R program from http://cran.r-project.org/bin/windows/base/
+<ul>Execute the R-Ver-win.exe.
+<li>Agree to the GNU GPL</li>
+<li>Change the Install location to - C:\R (this makes our lives easier)</li>
+<li>Select the Customize Startup Options - YES!!!!!!</li>
+<li>Select SDI</li>
+<li>Select HTML Help</li>
+<li>Select Standard Internet</li>
+<li>Click Next until Done</li>
+</ul>
+Install R Studio
 ```
 require(RCurl)
 src <- ("https://github.com/ecjbosu/RQuantInstall/blob/master/requiredpackagesinstall.R")
