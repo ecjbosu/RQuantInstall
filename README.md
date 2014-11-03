@@ -15,8 +15,6 @@ setting up an accompaning shell script for rpm and deb installations.
   data locations.</li>
 </ul>
 
-Source script from R: Requires RCurl to be installed.  
-
 Download the R program from http://cran.r-project.org/bin/windows/base/
 
 <ul>Execute the R-Ver-win.exe.
@@ -36,6 +34,8 @@ Download the R program from http://cran.r-project.org/bin/windows/base/
 </ul>
 
 Install R Studio
+
+Source script from R: Requires RCurl to be installed.  
 ```
 require(RCurl)
 src <- ("https://github.com/ecjbosu/RQuantInstall/blob/master/requiredpackagesinstall.R")
