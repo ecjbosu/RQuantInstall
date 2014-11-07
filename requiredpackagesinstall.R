@@ -9,9 +9,10 @@
 requirepackagesinstall<-function(others=T, cranmirror=88, includeR_Forge=T) {
 # others=T will install the 2000+ other packages that may benefit.
 
-      others=T
-      cranmirror=88
-      includeR_Forge=T
+#      others=T
+#      cranmirror=88
+#      includeR_Forge=T
+
 #set the cranmirroor
 chooseCRANmirror(ind=cranmirror)
 
