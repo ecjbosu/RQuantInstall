@@ -48,6 +48,20 @@ miniCran if wanted
 install.packages("miniCRAN")
 library("miniCRAN")
 ```
+if miniCran set up, install from miniCran
+
+```
+localCRAN <-"//path/to/miniCran/CRAN/sources"
+list.files(path = localCRAN, recursive = TRUE)
+uri <- paste0("file:", normalizePath(localCRAN))
+uri
+options(repos = c(CRAN=uri))
+getOption("repos")
+available.packages(type="source")
+ap <- available.packages()
+install.packages(repo=uri)
+update.packages(repo=uri, ask=F)
+```
 <ul>Programs to help the Quant (Windows and Linux Applications:  most are avialable in linux repositories, so download link included to help Windows users)
 <li>R (http://cran.at.r-project.org/bin/windows/base/) using Github/ecjbosu installation instructions.</li>
 <li>Rstudio (http://www.rstudio.com/products/rstudio/download/)</li>
