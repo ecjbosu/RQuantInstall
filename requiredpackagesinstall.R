@@ -31,9 +31,9 @@ source("http://www.rmetrics.org/Rmetrics.R")
       "translations","utils");
 
    currentPacks <-c("RJDBC","hwriter","xlsxjars","xlsx","RCurl","XML","xtable",
-      "tis","reshape","xts","lubridate","rJava","base64enc","digest",
+      "tis","reshape","xts","lubridate","rJava","base64enc","digest", "rvest",
       "splus2R","R.archive","R.devices","R.matlab","R.menu","DBI","memoise",
-      "plyr","R.methodsS3","R.oo","R.utils","stringr","bibtex");
+      "plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex");
       
       
    rMetrics<-pkgsRmetrics(); # or next
@@ -222,7 +222,7 @@ otherpacks<-c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit",
 "gmodels","gmt","gMWT","gnmf","gnumeric","goalprog","gof","gogarch",
 "googlePublicData","goric","gpairs","GPArotation","gPdtest",
 "GPfit","gProfileR","GPseq","gptk","GPvam","grade",
-"granova","granovaGG","gRapHD","GrapheR","graphicsQC",
+"granova","gRapHD","GrapheR","graphicsQC",
 "GrassmannOptim","Grid2Polygons","gridDebug","gridGraphviz",
 "gridSVG","GriegSmith","grImport","grofit","grouped","GroupSeq","growcurves",
 "growthrate","grplasso","grpreg","grt","GSA","gsarima","gsbDesign","gsDesign",
