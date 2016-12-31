@@ -35,7 +35,7 @@ source("http://www.rmetrics.org/Rmetrics.R")
       "tis","reshape","xts","lubridate","rJava","base64enc","digest", "rvest",
       "splus2R","R.devices","R.matlab","DBI","memoise",
       "plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex",
-      "quantmod","PerformanceAnalytics", "lpsolve","lpSolveAPI");
+      "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI");
       
       
    rMetrics<-pkgsRmetrics(); # or next
@@ -103,7 +103,7 @@ mostCommonDepends<-c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc",
 "lisrelToR","rockchalk","rggobi","gclus","Cairo","doParallel","circular",
 "httpuv","qcc","elasticnet","intervals","spdep","mmap","spBayes",
 "deldir","tensor","polyclip","LearnBayes","akima","forecast",
-"svGUI","svMisc","Rook","shiny","tframe","tfplot","tseriesChaos","vars",
+"Rook","shiny","tframe","tfplot","tseriesChaos","vars",
 "setRNG","tframePlus","fame","TSsql","TSdbi","pastecs","tester","yaml",
 "yacca");
 
