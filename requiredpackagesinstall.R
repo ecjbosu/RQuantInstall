@@ -9,9 +9,10 @@
 requirepackagesinstall<-function(others=T, cranmirror=113, includeR_Forge=T) {
 # others=T will install the 2000+ other packages that may benefit.
 
-      others=T
-      cranmirror=113
-      includeR_Forge=T
+#      others=T
+#      cranmirror=113
+#      includeR_Forge=T
+
 #set the cranmirroor
 chooseCRANmirror(ind=cranmirror)
 
@@ -132,7 +133,7 @@ otherpacks<-c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit",
 "betareg","betategarch","bfa","bfast","bfp","BGLR","bgmm","BGSIMD","BH","Bhat",
 "biasbetareg","BiasedUrn","bibtex","BiDimRegression","bifactorial","bigdata",
 "biglars","bigml","bigRR","bild","bindata","binGroup","binom","binomialcftp",
-"binomlogit","binomTools","binseqtest""bit64",
+"binomlogit","binomTools","binseqtest","bit64",
 "bivarRIpower","biwavelet","biwt","BlakerCI","BLCOP","blighty","blm",
 "blockmodeling","blockrand","blockTools","BLR","BMA","bmem",
 "Bmix","BMN","bmp","BMS","bnlearn","BNPdensity","BoolNet",
