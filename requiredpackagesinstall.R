@@ -55,7 +55,7 @@ source("http://www.rmetrics.org/Rmetrics.R")
    
 mostCommonDepends<-c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc",
 "scales","plotrix","RColorBrewer","abind","coda","R.cache","R.filesets",
-"matrixStats","R.huge","R.rsp","scatterplot3d","vcd","seriation","polyFnom",
+"matrixStats","R.huge","R.rsp","scatterplot3d","vcd","seriation","polynom",
 "deSolve","gstat","RSQLite","sendmailR","brew","fail","pbapply","wpp2012",
 "hett","car","MCMCpack","maptools","colorspace","flexmix","modeltools",
 "sandwich","Rcpp","RcppArmadillo","strucchange","raster","e1071","fields",
