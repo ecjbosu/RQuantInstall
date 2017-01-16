@@ -28,9 +28,9 @@ Download the R program from http://cran.r-project.org/bin/windows/base/
 </ul>
 
 <ul>edit R/etc/repositories to read as
-<li>Omegahat Omegahat http://www.omegahat.org/RTRUE TRUE TRUE FALSE</li>
-<li>R-Forge R-Forge http://R-Forge.R-project.orgTRUE TRUE TRUE TRUE</li>
-<li>forge.net rforge.net http://www.rforge.netTRUE TRUE TRUE TRUE</li>
+<li>Omegahat Omegahat http://www.omegahat.org/R TRUE TRUE TRUE FALSE</li>
+<li>R-Forge R-Forge http://R-Forge.R-project.org    TRUE TRUE TRUE TRUE</li>
+<li>forge.net rforge.net http://www.rforge.net  TRUE TRUE TRUE TRUE</li>
 </ul>
 
 If you do not want to modify repositories then you can go to R-forge.r-project.org and manually install by copying and pasting the recommended install command, for example blotter is: install.packages("blotter", repos="http://R-Forge.R-project.org").
