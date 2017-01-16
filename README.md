@@ -33,6 +33,8 @@ Download the R program from http://cran.r-project.org/bin/windows/base/
 <li>forge.net rforge.net http://www.rforge.netTRUE TRUE TRUE TRUE</li>
 </ul>
 
+If you do not want to modify repositories then you can go to R-forge.r-project.org and manually install by copying and pasting the recommended install command, for example blotter is: install.packages("blotter", repos="http://R-Forge.R-project.org").
+
 Install R Studio
 
 Source script from R packages for the Ultimate Quant R: Requires RCurl to be installed.  

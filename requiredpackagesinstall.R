@@ -35,7 +35,7 @@ source("http://www.rmetrics.org/Rmetrics.R")
       "tis","reshape","xts","lubridate","rJava","base64enc","digest", "rvest",
       "splus2R","R.devices","R.matlab","DBI","memoise",
       "plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex",
-      "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI");
+      "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI", "blotter");
       
       
    rMetrics<-pkgsRmetrics(); # or next
