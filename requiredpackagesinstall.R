@@ -33,9 +33,10 @@ source("http://www.rmetrics.org/Rmetrics.R")
 
    currentPacks <-c("RJDBC","hwriter","xlsxjars","xlsx","RCurl","XML","xtable",
       "tis","reshape","xts","lubridate","rJava","base64enc","digest", "rvest",
-      "splus2R","R.devices","R.matlab","DBI","memoise","packrat",
+      "splus2R","R.devices","R.matlab","DBI","memoise","packrat", "R6", "readODS",
       "plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex",
-      "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI", "blotter");
+      "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI", "blotter",
+      "rconnect");
       
       
    rMetrics<-pkgsRmetrics(); # or next
