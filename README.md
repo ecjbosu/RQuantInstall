@@ -42,9 +42,9 @@ Source script from R packages for the Ultimate Quant R: Requires RCurl to be ins
 chooseCRANmirror(ind=1);
 install.packages("RCurl", lib='/usr/lib64/R/library'); # for linux running as root
 require(RCurl);
-src <- ("https://github.com/ecjbosu/RQuantInstall/blob/master/requiredpackagesinstall.R");
-src <- getURL(src, ssl.verifypeer = F);
-eval(parse(text = src), envir= .GlobalEnv);
+source('https://github.com/ecjbosu/RQuantInstall/raw/master/requiredpackagesinstall.R')
+# run with default options
+requiredpackagesinstall()
 ```
 miniCran if wanted
   http://blog.revolutionanalytics.com/2014/10/introducing-minicran.html

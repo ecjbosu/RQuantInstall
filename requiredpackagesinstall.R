@@ -6,11 +6,11 @@
 # Mail   : <<<ecjbosu@aol.com>>>
 #==============================================================================
 #Install the Base plus a few Quantitative libraries 
-requirepackagesinstall<-function(others=F, cranmirror=113, includeR_Forge=T) {
+requirepackagesinstall <- function(others=F, cranmirror=1, includeR_Forge=T) {
 # others=T will install the 2000+ other packages that may benefit.
 
 #      others=T
-#      cranmirror=113
+#      cranmirror=1 #cloud repository
 #      includeR_Forge=T
 
 #set the cranmirroor
@@ -31,7 +31,7 @@ source("http://www.rmetrics.org/Rmetrics.R")
       "spatial","splines","stats","stats4","survival","tcltk","tools",
       "translations","utils");
 
-   currentPacks <-c("RJDBC","hwriter","xlsxjars","xlsx","RCurl","XML","xtable",
+   currentPacks <- c("RJDBC","hwriter","xlsxjars","xlsx","RCurl","XML","xtable",
       "tis","reshape","xts","lubridate","rJava","base64enc","digest", "rvest",
       "splus2R","R.devices","R.matlab","DBI","memoise","packrat", "R6", "readODS",
       "plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex",
@@ -39,7 +39,7 @@ source("http://www.rmetrics.org/Rmetrics.R")
       "rsconnect");
       
       
-   rMetrics<-pkgsRmetrics(); # or next
+   rMetrics <- pkgsRmetrics(); # or next
    rMetrics <- c("timeDate","timeSeries","fImport","fBasics","fArma",
       "fGarch","fNonlinear","fUnitRoots","fTrading","fMultivar",
       "fRegression","fExtremes","fCopulae","fBonds","fOptions",
@@ -47,14 +47,14 @@ source("http://www.rmetrics.org/Rmetrics.R")
       "BLCOP","FKF","ghyp","HyperbolicDist","randtoolbox","rngWELL",
       "schwartz97","SkewHyperbolic","VarianceGamma","stabledist")
 
-   rMetricsRequires<-c("bitops","mnormt","zoo","DEoptimR","slam","gtools",
+   rMetricsRequires <- c("bitops","mnormt","zoo","DEoptimR","slam","gtools",
       "gdata","caTools","gss","urca","sn","polspline","lmtest","robustbase",
       "quadprog","Rglpk","RUnit","numDeriv","gplots","mvtnorm",
       "DistributionUtils","GeneralizedHyperbolic");
    
    mine <- c(getOption('defaultPackages'),currentPacks, rMetrics);
    
-mostCommonDepends<-c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc",
+mostCommonDepends <- c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc",
 "scales","plotrix","RColorBrewer","abind","coda","R.cache","R.filesets",
 "matrixStats","R.huge","R.rsp","scatterplot3d","vcd","seriation","polynom",
 "deSolve","gstat","RSQLite","sendmailR","brew","fail","pbapply","wpp2012",
@@ -110,11 +110,11 @@ mostCommonDepends<-c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc",
 
 #from packageCleanup
 
-requireForCurrentPackageSet<-c(); 
+requireForCurrentPackageSet <- c(); 
 
 
 
-otherpacks<-c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit",
+otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit",
 "AdMit","ads","AER",
 "aftgee","AGD","Agreement","AGSDest","ahaz","AID","AIM","akmeans","alabama",
 "allan","allanvar","AllPossibleSpellings","alphashape3d","alr3","alr4","ALS",
