@@ -36,7 +36,8 @@ source("http://www.rmetrics.org/Rmetrics.R")
       "splus2R","R.devices","R.matlab","DBI","memoise","packrat", "R6", "readODS",
       "plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex",
       "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI", "blotter",
-      "rsconnect");
+      "rsconnect", "dplyr", "leaflet", "dtplyr", "corrplot", "DT", "ggplot2",
+		"tidyr");
       
       
    rMetrics <- pkgsRmetrics(); # or next
@@ -63,7 +64,7 @@ mostCommonDepends <- c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc
 "permute","ROCR","gbm","colorRamps","pamr","randomForest","Boruta","caret",
 "tgp","mlegp","penalizedSVM","SoDA","cubature","truncdist","spam","reshape2",
 "foreach","polycor","sfsmisc","glmmML","miscTools","VGAM","multcomp","actuar",
-"statmod","tweedie","ggplot2","ade4","R2HTML","useful","proto","oce",
+"statmod","tweedie","ade4","R2HTML","useful","proto","oce",
 "isotone","energy","rootSolve","AlgDesign","clusterSim","rgeos","RandomFields",
 "gsl","ADGofTest","pspline","copula","vines","truncnorm","CRF","expm","corpcor",
 "phangorn","rgenoud","biglm","minqa","tpr","lgtdl","pls","latticeExtra",
@@ -158,7 +159,7 @@ otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit
 "constrainedKriging","conting","contrast","ConvCalendar",
 "ConvergenceConcepts","copBasic","copulaedas",
 "CopulaRegression","CopyDetect","corcounts","CORElearn","corHMM","corpora",
-"CorrBin","corrgram","corrplot","corrsieve","cosmoFns","cosso","costat",
+"CorrBin","corrgram","corrsieve","cosmoFns","cosso","costat",
 "cotrend","COUNT","countrycode","CoxBoost","coxphf","coxphw","coxrobust","CPE",
 "cplm","cpm","CPMCGLM","Cprob","CR","cramer","crank","crantastic",
 "crblocks","CreditMetrics","crimCV","CRM","crn","crossmatch","crp.CSFP","crrSC",
