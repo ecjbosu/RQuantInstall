@@ -37,7 +37,7 @@ source("http://www.rmetrics.org/Rmetrics.R")
       "plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex",
       "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI", "blotter",
       "rsconnect", "dplyr", "leaflet", "dtplyr", "corrplot", "DT", "ggplot2",
-		"tidyr");
+		"tidyr", "Quandl", "tidyquant");
       
       
    rMetrics <- pkgsRmetrics(); # or next
