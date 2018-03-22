@@ -33,14 +33,9 @@ source("http://www.rmetrics.org/Rmetrics.R")
 
    currentPacks <- c("RJDBC","hwriter","xlsxjars","xlsx","RCurl","XML","xtable",
       "tis","reshape","xts","lubridate","rJava","base64enc","digest", "rvest",
-<<<<<<< .mine
-      "splus2R","R.devices","R.matlab","DBI","memoise","FinCal","FinancialMath",
-||||||| .r32
-      "splus2R","R.devices","R.matlab","DBI","memoise",
-=======
       "splus2R","R.devices","R.matlab","DBI","memoise","packrat", "R6", "readODS",
->>>>>>> .r47
       "plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex",
+      "PortfolioAnalytics","FinCal","FinancialMath",
       "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI", "blotter",
       "rsconnect", "dplyr", "leaflet", "dtplyr", "corrplot", "DT", "ggplot2",
 		"tidyr", "Quandl", "tidyquant");
