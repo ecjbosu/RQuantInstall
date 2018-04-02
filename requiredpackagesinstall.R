@@ -52,7 +52,14 @@ source("http://www.rmetrics.org/Rmetrics.R")
    rMetricsRequires <- c("bitops","mnormt","zoo","DEoptimR","slam","gtools",
       "gdata","caTools","gss","urca","sn","polspline","lmtest","robustbase",
       "quadprog","Rglpk","RUnit","numDeriv","gplots","mvtnorm",
-      "DistributionUtils","GeneralizedHyperbolic");
+      "DistributionUtils","GeneralizedHyperbolic","DEoptim");
+
+   roi <- c("ucminf","ROI","ROI.plugin.glpk","ROI.plugin.quadprog","ROI.plugin.symphony",
+	"ROI.models.globalOptTests","ROI.models.miplib","ROI.models.netlib",
+	"ROI.plugin.alabama","ROI.plugin.clp","ROI.plugin.deoptim",
+	"ROI.plugin.ecos","ROI.plugin.ipop","ROI.plugin.lpsolve",
+	"ROI.plugin.msbinlp","ROI.plugin.nloptr","ROI.plugin.optimx","ROI.plugin.scs");
+#"ROI.plugin.cplex" skipping because dependencies are to damn difficult to install.
    
    mine <- c(getOption('defaultPackages'),currentPacks, rMetrics);
    
@@ -100,7 +107,7 @@ mostCommonDepends <- c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc
 "roxygen2","OAIHarvester","wavethresh","gamm4","RLRsim","tsoutliers",
 "FRACTION","mcmc","PhaseType","ascii","knitr","knitcitations","RPostgreSQL",
 "cmprsk","snowfall","matrixcalc","kknn","jsonlite","pcaPP",
-"registry","ROI","googleVis","quantreg","gam","minpack.lm","norm",
+"registry","googleVis","quantreg","gam","minpack.lm","norm",
 "Rwave","tree","maxent","tau","rphast","nloptr","spd","maps","RWekajars",
 "dichromat","munsell","labeling","sm","VineCopula","survey","qgraph",
 "lisrelToR","rockchalk","rggobi","gclus","Cairo","doParallel","circular",
@@ -392,8 +399,7 @@ otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit
 "rngWELL","rngwell19937","RNiftyReg","ROAuth","RobAStBase",
 "robeth","robfilter","RobRex","robust","RobustAFT","robustfa","robustgam",
 "robustHD","robustloggamma","RobustRankAggreg","robustreg","robustX","rocc",
-"rococo","ROCwoGS","RODBC","RODM","ROI.plugin.glpk",
-"ROI.plugin.quadprog","ROI.plugin.symphony","ROptEst",
+"rococo","ROCwoGS","RODBC","RODM","ROptEst",
 "ROptEstOld","ROptRegTS","ror","royston","rpartScore","RPCLR",
 "rpf","rPlant","rplos","rplotengine","RPMM","rportfolios","rpsychi",
 "rpubchem","RQDA","Rquake","RQuantLib","Rramas","rrBLUP",
@@ -488,6 +494,8 @@ allpacks=c(getOption('defaultPackages'),basePacks,currentPacks,
 install.Rmetrics(repos="http://cran.us.r-project.org")
 
 install.packages(currentPacks, repos=getOption("repos"));
+
+install.packages(roi,repos=getOption("repos"));
 
 install.packages(mostCommonDepends,repos=getOption("repos"));
 
