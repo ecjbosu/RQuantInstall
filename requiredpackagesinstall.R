@@ -479,7 +479,7 @@ otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit
 "wavelets","wavemulcor","waveslim","wccsom","WCQ","WDI","weatherData",
 "webvis","WeightedCluster",
 "WeightedPortTest","weightedScores","weights","weirs","wfe","wgaim","WhatIf",
-"widals","WilcoxCV","wle","WMDB","WriteXLS","x12","x12GUI","XiMpLe","XLConnect",
+"widals","WilcoxCV","wle","WMDB","WriteXLS","x13binary","x12","x12GUI","XiMpLe","XLConnect",
 "xoi","YaleToolkit","yhat","YieldCurve","zendeskR","zic","zipcode");
 
 allpacks=c(getOption('defaultPackages'),basePacks,currentPacks,
