@@ -29,7 +29,7 @@ source("http://www.rmetrics.org/Rmetrics.R")
       "datasets","foreign","graphics","grDevices","grid","KernSmooth","lattice",
       "MASS","Matrix","methods","mgcv","nlme","nnet","parallel","rpart",
       "spatial","splines","stats","stats4","survival","tcltk","tools",
-      "translations","utils");
+      "translations","devtools","utils");
 
    currentPacks <- c("RJDBC","hwriter","xlsxjars","xlsx","RCurl","XML","xtable",
       "tis","reshape","xts","lubridate","rJava","base64enc","digest", "rvest",
@@ -178,7 +178,7 @@ otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit
 "dataframes2xls","datamap","datamart","datautils",
 "dataview","date","dblcens","dbmss","dcemriS4","dcv","ddst","deal","debug",
 "depmix","depmixS4","depth","depthTools","descr","deseasonalize",
-"detect","deTestSet","detrendeR","devEMF","devtools","dglars","dglm","dgmb",
+"detect","deTestSet","detrendeR","devEMF","dglars","dglm","dgmb",
 "dgof","dhglm","diagram","DiagTest3Grp","directlabels",
 "DirichletReg","dirmult","disclapmix","DiscreteInverseWeibull",
 "DiscreteLaplace","discreteMTP","discretization","DiscriMiner","disp2D",
@@ -494,6 +494,10 @@ allpacks=c(getOption('defaultPackages'),basePacks,currentPacks,
 install.Rmetrics(repos="http://cran.us.r-project.org")
 
 install.packages(currentPacks, repos=getOption("repos"));
+
+#install rcharts
+require(devtools)
+install_github("rCharts", "ramnathv", ref = "dev")
 
 install.packages(roi,repos=getOption("repos"));
 
