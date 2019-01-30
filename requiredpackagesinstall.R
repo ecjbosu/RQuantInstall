@@ -38,7 +38,7 @@ source("http://www.rmetrics.org/Rmetrics.R")
       "PortfolioAnalytics","FinCal","FinancialMath",
       "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI", "blotter",
       "rsconnect", "dplyr", "leaflet", "dtplyr", "corrplot", "DT", "ggplot2",
-		"tidyr", "Quandl", "tidyquant");
+		"tidyr", "Quandl", "tidyquant","hablar");
       
       
    rMetrics <- pkgsRmetrics(); # or next
