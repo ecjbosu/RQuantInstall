@@ -39,7 +39,7 @@ Install R Studio
 
 Source script from R packages for the Ultimate Quant R: Requires RCurl to be installed.  
 ```
-source('https://github.com/ecjbosu/RQuantInstall/raw/master/requiredpackagesinstall.R')
+source('https://raw.githubusercontent.com/ecjbosu/RQuantInstall/master/requiredpackagesinstall.R')
 # run with default options
 requiredpackagesinstall()
 ```
