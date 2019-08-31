@@ -501,20 +501,20 @@ otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit
 install.packages(pkgsRmetricsDev(), repos='http://cran.us.r-project.org', dependencies=TRUE);
 
 
-install.packages(currentPacks, repos=getOption("repos"));
+install.packages(currentPacks, repos=getOption("repos"), dependencies=TRUE);
 
 #install rcharts
 require(devtools)
 install_github("ramnathv/rCharts")
 
 #blotter
-install.packages("blotter", repos="http://R-Forge.R-project.org")
+install.packages("blotter", repos="http://R-Forge.R-project.org", dependencies=TRUE)
 
-install.packages(roi,repos=getOption("repos"));
+install.packages(roi,repos=getOption("repos"), dependencies=TRUE);
 
-install.packages(mostCommonDepends,repos=getOption("repos"));
+install.packages(mostCommonDepends,repos=getOption("repos"), dependencies=TRUE);
 
-if (others) install.packages(otherpacks,repos=getOption("repos"));
+if (others) install.packages(otherpacks,repos=getOption("repos"), dependencies=TRUE);
 
 }
 
