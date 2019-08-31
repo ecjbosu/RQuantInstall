@@ -22,26 +22,27 @@ if (includeR_Forge) options("repos"= c(repos, "http://R-Forge.R-project.org"));
 
 #source("http://www.rmetrics.org/Rmetrics.R")
 #Updated to rforge read only repository: JWB
-source("https://raw.githubusercontent.com/rforge/rmetrics/master/www/installRmetrics.R")
-
+# Errors on fUtilities so use source from rforge pkgs
+#source("https://raw.githubusercontent.com/rforge/rmetrics/master/www/installRmetrics.R")
+source("https://r-forge.r-project.org/scm/viewvc.php/*checkout*/pkg/RmetricsTools.R?revision=5924&root=rmetrics")
 
    #options(install.packages.check.source = FALSE)
    
-   basePacks <- c("base","boot","class","cluster","codetools","compiler",
-      "datasets","foreign","graphics","grDevices","grid","KernSmooth","lattice",
-      "MASS","Matrix","methods","mgcv","nlme","nnet","parallel","rpart",
-      "spatial","splines","stats","stats4","survival","tcltk","tools",
-      "translations","devtools","utils");
+   #basePacks <- c("base","boot","class","cluster","codetools","compiler",
+   #   "datasets","foreign","graphics","grDevices","grid","KernSmooth","lattice",
+   #   "MASS","Matrix","methods","mgcv","nlme","nnet","parallel","rpart",
+   #   "spatial","splines","stats","stats4","survival","tcltk","tools",
+   #   "translations","devtools","utils");
 
    currentPacks <- c("RJDBC","hwriter","xlsxjars","xlsx","RCurl","XML","xtable",
       "tis","reshape","xts","lubridate","rJava","base64enc","digest", "rvest",
       "splus2R","R.devices","R.matlab","DBI","memoise","packrat", "R6", "readODS",
       "plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex",
       "PortfolioAnalytics","FinCal","FinancialMath",
-      "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI", "blotter",
+      "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI", 
       "rsconnect", "dplyr", "leaflet", "dtplyr", "corrplot", "DT", "ggplot2",
 		"tidyr", "Quandl", "tidyquant","hablar");
-      
+      #"blotter", will be installed from r-forge directly
       
 #   rMetrics <- pkgsRmetrics(); # or next
 #   rMetrics <- c("timeDate","timeSeries","fImport","fBasics","fArma",
@@ -60,9 +61,9 @@ source("https://raw.githubusercontent.com/rforge/rmetrics/master/www/installRmet
 
    roi <- c("ucminf","ROI","ROI.plugin.glpk","ROI.plugin.quadprog","ROI.plugin.symphony",
 	"ROI.models.globalOptTests","ROI.models.miplib","ROI.models.netlib",
-	"ROI.plugin.alabama","ROI.plugin.clp","ROI.plugin.deoptim",
-	"ROI.plugin.ecos","ROI.plugin.ipop","ROI.plugin.lpsolve",
-	"ROI.plugin.msbinlp","ROI.plugin.nloptr","ROI.plugin.optimx","ROI.plugin.scs");
+	"ROI.plugin.alabama","ROI.plugin.clp","ROI.plugin.deoptim","ROI.plugin.ecos",
+	"ROI.plugin.ipop","ROI.plugin.lpsolve","ROI.plugin.msbinlp","ROI.plugin.nloptr",
+	"ROI.plugin.optimx","ROI.plugin.scs");
 #"ROI.plugin.cplex" skipping because dependencies are to damn difficult to install.
    
    mine <- c(getOption('defaultPackages'),currentPacks, rMetrics);
@@ -495,13 +496,19 @@ otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit
 #allpacks=c(getOption('defaultPackages'),basePacks,currentPacks,
 #  rMetrics,rMetricsRequires,mostCommonDepends ,otherpacks   )
 
-installRmetrics(repos="http://cran.us.r-project.org")
+#installRmetrics(repos="http://cran.us.r-project.org")
+#installRmetrics deprecated, but rmetrics install has issues, failing to install.packages using pkgsRmetricsDev()
+install.packages(pkgsRmetricsDev(), repos='http://cran.us.r-project.org', dependencies=TRUE);
+
 
 install.packages(currentPacks, repos=getOption("repos"));
 
 #install rcharts
 require(devtools)
 install_github("rCharts", "ramnathv", ref = "dev")
+
+#blotter
+install.packages("blotter", repos="http://R-Forge.R-project.org")
 
 install.packages(roi,repos=getOption("repos"));
 
