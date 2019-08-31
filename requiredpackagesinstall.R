@@ -505,7 +505,7 @@ install.packages(currentPacks, repos=getOption("repos"));
 
 #install rcharts
 require(devtools)
-install_github("rCharts", "ramnathv", ref = "dev")
+install_github("ramnathv/rCharts")
 
 #blotter
 install.packages("blotter", repos="http://R-Forge.R-project.org")
