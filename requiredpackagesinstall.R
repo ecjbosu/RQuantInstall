@@ -66,7 +66,7 @@ source("https://r-forge.r-project.org/scm/viewvc.php/*checkout*/pkg/RmetricsTool
 	"ROI.plugin.optimx","ROI.plugin.scs");
 #"ROI.plugin.cplex" skipping because dependencies are to damn difficult to install.
    
-   mine <- c(getOption('defaultPackages'),currentPacks, rMetrics);
+#   mine <- c(getOption('defaultPackages'),currentPacks, rMetrics);
    
 mostCommonDepends <- c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc",
 "scales","plotrix","RColorBrewer","abind","coda","R.cache","R.filesets",
