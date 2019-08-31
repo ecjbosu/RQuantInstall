@@ -6,7 +6,7 @@
 # Mail   : <<<ecjbosu@aol.com>>>
 #==============================================================================
 #Install the Base plus a few Quantitative libraries 
-requirepackagesinstall <- function(others=F, cranmirror=1, includeR_Forge=T) {
+requiredpackagesinstall <- function(others=F, cranmirror=1, includeR_Forge=T) {
 # others=T will install the 2000+ other packages that may benefit.
 
 #      others=T
@@ -37,7 +37,7 @@ source("https://r-forge.r-project.org/scm/viewvc.php/*checkout*/pkg/RmetricsTool
    currentPacks <- c("RJDBC","hwriter","xlsxjars","xlsx","RCurl","XML","xtable",
       "tis","reshape","xts","lubridate","rJava","base64enc","digest", "rvest",
       "splus2R","R.devices","R.matlab","DBI","memoise","packrat", "R6", "readODS",
-      "plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex",
+      "Rcpp","plyr","R.methodsS3","R.oo","R.utils","stringr","stringi","bibtex",
       "PortfolioAnalytics","FinCal","FinancialMath",
       "quantmod","PerformanceAnalytics", "lpSolve","lpSolveAPI", 
       "rsconnect", "dplyr", "leaflet", "dtplyr", "corrplot", "DT", "ggplot2",
@@ -73,7 +73,7 @@ mostCommonDepends <- c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc
 "matrixStats","R.huge","R.rsp","scatterplot3d","vcd","seriation","polynom",
 "deSolve","gstat","RSQLite","sendmailR","brew","fail","pbapply","wpp2012",
 "hett","car","MCMCpack","maptools","colorspace","flexmix","modeltools",
-"sandwich","Rcpp","RcppArmadillo","strucchange","raster","e1071","fields",
+"sandwich","RcppArmadillo","strucchange","raster","e1071","fields",
 "permute","ROCR","gbm","colorRamps","pamr","randomForest","Boruta","caret",
 "tgp","mlegp","penalizedSVM","SoDA","cubature","truncdist","spam","reshape2",
 "foreach","polycor","sfsmisc","glmmML","miscTools","VGAM","multcomp","actuar",
