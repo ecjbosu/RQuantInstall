@@ -43,18 +43,20 @@ source("https://raw.githubusercontent.com/rforge/rmetrics/master/www/installRmet
 		"tidyr", "Quandl", "tidyquant","hablar");
       
       
-   rMetrics <- pkgsRmetrics(); # or next
-   rMetrics <- c("timeDate","timeSeries","fImport","fBasics","fArma",
-      "fGarch","fNonlinear","fUnitRoots","fTrading","fMultivar",
-      "fRegression","fExtremes","fCopulae","fBonds","fOptions",
-      "fExoticOptions","fAsianOptions","fAssets","fPortfolio",
-      "BLCOP","FKF","ghyp","HyperbolicDist","randtoolbox","rngWELL",
-      "schwartz97","SkewHyperbolic","VarianceGamma","stabledist")
+#   rMetrics <- pkgsRmetrics(); # or next
+#   rMetrics <- c("timeDate","timeSeries","fImport","fBasics","fArma",
+#      "fGarch","fNonlinear","fUnitRoots","fTrading","fMultivar",
+#      "fRegression","fExtremes","fCopulae","fBonds","fOptions",
+#      "fExoticOptions","fAsianOptions","fAssets","fPortfolio",
+#      "BLCOP","FKF","ghyp","HyperbolicDist","randtoolbox","rngWELL",
+#      "schwartz97","SkewHyperbolic","VarianceGamma","stabledist")
 
-   rMetricsRequires <- c("bitops","mnormt","zoo","DEoptimR","slam","gtools",
-      "gdata","caTools","gss","urca","sn","polspline","lmtest","robustbase",
-      "quadprog","Rglpk","RUnit","numDeriv","gplots","mvtnorm",
-      "DistributionUtils","GeneralizedHyperbolic","DEoptim");
+#   rMetricsRequires <- c("bitops","mnormt","zoo","DEoptimR","slam","gtools",
+#      "gdata","caTools","gss","urca","sn","polspline","lmtest","robustbase",
+#      "quadprog","Rglpk","RUnit","numDeriv","gplots","mvtnorm",
+#      "DistributionUtils","GeneralizedHyperbolic","DEoptim");
+
+
 
    roi <- c("ucminf","ROI","ROI.plugin.glpk","ROI.plugin.quadprog","ROI.plugin.symphony",
 	"ROI.models.globalOptTests","ROI.models.miplib","ROI.models.netlib",
@@ -490,10 +492,10 @@ otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit
 "widals","WilcoxCV","wle","WMDB","WriteXLS","x13binary","x12","x12GUI","XiMpLe","XLConnect",
 "xoi","YaleToolkit","yhat","YieldCurve","zendeskR","zic","zipcode");
 
-allpacks=c(getOption('defaultPackages'),basePacks,currentPacks,
-  rMetrics,rMetricsRequires,mostCommonDepends ,otherpacks   )
+#allpacks=c(getOption('defaultPackages'),basePacks,currentPacks,
+#  rMetrics,rMetricsRequires,mostCommonDepends ,otherpacks   )
 
-install.Rmetrics(repos="http://cran.us.r-project.org")
+installRmetrics(repos="http://cran.us.r-project.org")
 
 install.packages(currentPacks, repos=getOption("repos"));
 
