@@ -20,7 +20,9 @@ repos = getOption("repos");
 
 if (includeR_Forge) options("repos"= c(repos, "http://R-Forge.R-project.org"));
 
-source("http://www.rmetrics.org/Rmetrics.R")
+#source("http://www.rmetrics.org/Rmetrics.R")
+#Updated to rforge read only repository: JWB
+source("https://raw.githubusercontent.com/rforge/rmetrics/master/www/installRmetrics.R")
 
 
    #options(install.packages.check.source = FALSE)
