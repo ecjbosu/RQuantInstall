@@ -512,9 +512,9 @@ install.packages("blotter", repos="http://R-Forge.R-project.org", dependencies=T
 
 install.packages(roi,repos="https://cloud.r-project.org", dependencies=TRUE);
 
-install.packages(mostCommonDepends,repos=repos = "https://cloud.r-project.org", dependencies=TRUE);
+install.packages(mostCommonDepends,repos="https://cloud.r-project.org", dependencies=TRUE);
 
-if (others) install.packages(otherpacks,repos=repos = "https://cloud.r-project.org", dependencies=TRUE);
+if (others) install.packages(otherpacks,repos="https://cloud.r-project.org", dependencies=TRUE);
 
 }
 
