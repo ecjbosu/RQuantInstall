@@ -19,7 +19,7 @@ chooseCRANmirror(ind=cranmirror)
 
 repos = getOption("repos");
 
-if (includeR_Forge) options("repos"= c(repos, "http://R-Forge.R-project.org"));
+if (includeR_Forge) options("repos"= c(repos, "https://cloud.r-project.org", "http://R-Forge.R-project.org"));
 
 #source("http://www.rmetrics.org/Rmetrics.R")
 #Updated to rforge read only repository: JWB
@@ -81,7 +81,7 @@ mostCommonDepends <- c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc
 "statmod","tweedie","ade4","R2HTML","useful","proto","oce",
 "isotone","energy","rootSolve","AlgDesign","clusterSim","rgeos","RandomFields",
 "gsl","ADGofTest","pspline","copula","vines","truncnorm","CRF","expm","corpcor",
-"phangorn","rgenoud","biglm","minqa","tpr","lgtdl","pls","latticeExtra",
+"phangorn","rgenoud","biglm","minqa","tpr","lgtdl","latticeExtra",
 "RJSONIO","base64","markdown","mvbutils","httr","whisker","evaluate","disclap",
 "distr","distrEx","distrSim","distrTEst","distrTeach","RandVar","distrMod",
 "SweaveListingUtils","startupmsg","KFAS","lme4","combinat","lhs",
@@ -94,7 +94,7 @@ mostCommonDepends <- c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc
 "magic","qvcalc","relimp","testthat","RSAGA","rgdal","aqp","plotKML",
 "quantregForest","spacetime","ggmap","popgraph","locfit","ash","ks","EMD","Iso",
 "fda","SparseM","TeachingDemos","hydroTSM","automap","elliptic","contfrac",
-"appell","kappalab","baseline","signal","evd","spcosa","spatstat","network",
+"appell","kappalab","baseline","signal","evd","spcosa","network",
 "sets","prodlim","ff","sciplot","genalg","kernlab","mitools","formatR","highr",
 "lmodel2","sna","gWidgets","pbivnorm","MBESS","FNN","yuima",
 "harvestr","dostats","pbkrtest","gvlma","shapes","pcaMethods","SparseGrid",
@@ -105,17 +105,17 @@ mostCommonDepends <- c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc
 "partitions","Rsolnp","HardyWeinberg","emulator","compositions",
 "robCompositions","labdsv","vegan","bayesm","statnet.common","objectSignals",
 "NLP","openNLPdata","getopt","ucminf","BHH2","phytools","coin","mratios",
-"binMto","RWeka","rcdd","phylosim","snow","rlecuyer","penalized","gnm","matlab",
+"binMto","RWeka","rcdd","phylosim","rlecuyer","penalized","gnm","matlab",
 "animation","gridBase","misc3d","pixmap","classInt","plsdof","plsRglm",
 "spls","mixOmics","bipartite","games","calibrate","RcppEigen","lava",
 "multilevel","chron","openNLP","reports","tm","venneuler","ellipse","lavaan",
 "sem","jpeg","BDgraph","hdrcde","RSNNS","rtematres","biclust","isa2","ggthemes",
 "roxygen2","OAIHarvester","wavethresh","gamm4","RLRsim","tsoutliers",
 "FRACTION","mcmc","PhaseType","ascii","knitr","knitcitations","RPostgreSQL",
-"cmprsk","snowfall","matrixcalc","kknn","jsonlite","pcaPP",
+"cmprsk","matrixcalc","kknn","jsonlite","pcaPP",
 "registry","googleVis","quantreg","gam","minpack.lm","norm",
 "Rwave","tree","maxent","tau","rphast","nloptr","spd","maps","RWekajars",
-"dichromat","munsell","labeling","sm","VineCopula","survey",
+"dichromat","munsell","labeling","VineCopula","survey",
 "lisrelToR","rockchalk","rggobi","gclus","Cairo","doParallel","circular",
 "httpuv","qcc","elasticnet","intervals","spdep","mmap","spBayes",
 "deldir","tensor","polyclip","LearnBayes","akima","forecast",
@@ -125,7 +125,7 @@ mostCommonDepends <- c("rgl","igraph","ape","Formula","BB","geepack","sp","Hmisc
 
 #from packageCleanup
 
-requireForCurrentPackageSet <- c(); 
+#requireForCurrentPackageSet <- c(); 
 
 
 
@@ -261,12 +261,12 @@ otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit
 "ICC","ICE","ICEinfer","iCluster","ICS","ICSNP","idbg",
 "identity","IDPmisc","idr","ifs","ifultools","iGasso","IgorR","igraphdata",
 "igraphtosonia","Imap","imguR","IMIS","imprProbEst","imputeMDR","imputeYn",
-"IndependenceTests","indicspecies","ineq","InfDim","inference","influence.ME",
+"indicspecies","ineq","InfDim","inference","influence.ME",
 "infoDecompuTE","informR","infotheo","infutil","inline","inlinedocs",
 "insideRODE","insol","intamap","intamapInteractive",
 "Interact","InteractiveIGraph","intergraph","Interpol",
 "Interpol.T","intpoint","intReg","intRegGOF","introgress","intsvy","iplots",
-"IPMpack","ipw","IQCC","irace","iRegression","irlba","irr","irtoys","irtrees",
+"IPMpack","ipw","IQCC","iRegression","irlba","irr","irtoys","irtrees",
 "ISBF","ISDA.R","isdals","ismev","isocir","ISOcodes","isopam","isopat",
 "IsotopeR","ISOweek","ISwR","iterLap","itertools","its","itsmr","ivbma",
 "JavaGD","JGL","JGR","JM","JMbayes","Jmisc",
@@ -349,7 +349,7 @@ otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit
 "pander","ParamHelpers","paran","parcor","parfm","parfossil","parma",
 "parmigene","partDSA","partialOR","partitionMap","partitionMetric","partsm",
 "party","partykit","parviol","PAS","pavo","PBImisc","PBSadmb","PBSddesolve",
-"PBSmapping","PBSmodelling","pcaL1","PCICt","PCIT",
+"PBSmapping","PBSmodelling","pcaL1","PCICt",
 "pcse","pdc","pdfCluster","pdist","PDSCE","Peaks","pear","PearsonDS",
 "PearsonICA","pec","pencopula","pendensity","penDvine",
 "pensim","peperr","peplib","pequod","perARMA","perm",
@@ -498,10 +498,10 @@ otherpacks <- c("abc","abn","acs","ActuDistns","ada","adabag","adagio","AdaptFit
 
 #installRmetrics(repos="http://cran.us.r-project.org")
 #installRmetrics deprecated, but rmetrics install has issues, failing to install.packages using pkgsRmetricsDev()
-install.packages(pkgsRmetricsDev(), repos='http://cran.us.r-project.org', dependencies=TRUE);
+install.packages(pkgsRmetricsDev(), repos="https://cloud.r-project.org", dependencies=TRUE);
 
 
-install.packages(currentPacks, repos=getOption("repos"), dependencies=TRUE);
+install.packages(currentPacks, repos="https://cloud.r-project.org", dependencies=TRUE);
 
 #install rcharts
 require(devtools)
@@ -510,11 +510,11 @@ install_github("ramnathv/rCharts")
 #blotter
 install.packages("blotter", repos="http://R-Forge.R-project.org", dependencies=TRUE)
 
-install.packages(roi,repos=getOption("repos"), dependencies=TRUE);
+install.packages(roi,repos="https://cloud.r-project.org", dependencies=TRUE);
 
-install.packages(mostCommonDepends,repos=getOption("repos"), dependencies=TRUE);
+install.packages(mostCommonDepends,repos=repos = "https://cloud.r-project.org", dependencies=TRUE);
 
-if (others) install.packages(otherpacks,repos=getOption("repos"), dependencies=TRUE);
+if (others) install.packages(otherpacks,repos=repos = "https://cloud.r-project.org", dependencies=TRUE);
 
 }
 
